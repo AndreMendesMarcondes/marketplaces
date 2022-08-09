@@ -7,12 +7,7 @@ import wget
 from datetime import datetime, date, timedelta
 import sys,os
 
-server = '192.168.1.15' 
-database = 'PROTHEUS_ZANOTTI_PRODUCAO' 
-username = 'totvs' 
-password = 'totvsip' 
-conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-cursor = conn.cursor()
+###CONN###
 
 headers= {'Content-Type':'x-www-form-urlencoded'}
 url_autenticacao= "https://web-service.predify.me/token"
