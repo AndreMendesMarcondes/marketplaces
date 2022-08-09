@@ -47,12 +47,7 @@ from setuptools import Command
 from tkcalendar import Calendar
 from wsproto import Headers
 
-server = '192.168.1.15' 
-database = 'PROTHEUS_ZANOTTI_PRODUCAO' 
-username = 'totvs' 
-password = 'totvsip' 
-conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-cursor = conn.cursor()
+###CONN###
 x="S"
 happening =1
 erro = 0
