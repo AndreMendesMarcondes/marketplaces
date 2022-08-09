@@ -6,12 +6,7 @@ import pandas as pd
 import numpy as np
 import os
 
-server = '192.168.1.15' 
-database = 'PROTHEUS_ZANOTTI_PRODUCAO' 
-username = 'totvs' 
-password = 'totvsip' 
-conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-cursor = conn.cursor()
+##CONN##
 recno="SELECT MAX (R_E_C_N_O_) +1 FROM SUB010"
 path=("//192.168.1.16/02 - Público/15 - Vendas Industria/Calculo Dimensional Camara/atendimento_produtos/")
 path2=("//192.168.1.16/02 - Público/15 - Vendas Industria/Calculo Dimensional Camara/atendimento_produtos")
